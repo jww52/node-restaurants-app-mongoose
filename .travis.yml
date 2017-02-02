@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: CWs+LEGmO8Kv+7B0tDvXL4hkGavqd8amQGVnvKSgUjimOCBEh+U63chM4jj4NSS5XuaYwRJ5apwbuebkAX5uPPoRsu9bIuTMXRmLCLR4Vhfuuj5VHsqDBzN2kXxFnVjC++MyBp0Fwf42nhfIQhUIiF8pNSr+tTVtXi8A7+wpP+szwXc/uChQEfzi7DFzGnTec5ShIlGe4S02Y2yb8xiGPdbOnFEFr5GmHwt2NaWrWAZiOhZQPojOVM2Eam3thNJ+/cnvheeU7GGptjDziw/T46yZ8DR/uDE5N/05UfUXvdXGw+cJndzN75Cypc6t/HLiSm45BPsuxXoOZXsPZv8+G8SepYqKnYhaDuKYxRfuNNJTbYGKuEux19x2AIC51ClXkuJiVw0a6sJORX9Pmb4visWpdubdWcDaEC4IeD50rOR/IxXsAyzGsvECQ4nAJX8DVudNbEZyKnnL1VqUSLuPeAd4DuBbX5dD9p8vvnKk2VB4BMWbzWziLx9+5LmN25+TFXA4p2EKPErOUpyODoXRUuIyCsxNnZcPnpWtO8Xu141aFuwScIR0p+xlfbLCwDI20UChHCvRprJvZVO2nbr0870InvYdSF+t2aqcV4VMjUIo42Ot4BTzoW1zsyvjN+gnKIeecEr8qAB925X9DCHw9bdp9zk9UJxH1+R/Qc7fVoE=
+  app: whispering-oasis-11640
+  on:
+    repo: jww52/node-restaurants-app-mongoose
+    branch: feature/with-tests
